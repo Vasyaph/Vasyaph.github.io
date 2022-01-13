@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div id="wrapper">
+    <header>
+
+      <a href="#"class="logo">Moon</a>
+      <ul>
+        <li ><a class="git" href="https://github.com/Vasyaph">Github</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#main_info">Skills</a></li>
+      </ul>
+    </header>
+    <section>
+      <img src="sity_bg/sky.png" id="stars">
+      <img src="sity_bg/moon.png" id="moon">
+
+
+
+      <img src="sity_bg/BHouse2 c.png" id="house2">
+      <h2 id="text">Summary</h2>
+      <img src="sity_bg/house1.png" id="house1">
+
+
+    </section>
+
+
+<div class="info">
+  <h2>Егоров Владислав Евгеньевич</h2>
+  <h3>Разработчик программного обеспечения</h3>
+<hr>
+
+<h2 id="main_info">Основная информация</h2>
+<h3>Основные умения</h3>
+<ul>
+<li>Разработка программного обеспечения</li>
+<li>Создание сайтов</li>
+<li>Проектная документация</li>
+<li>Базовое знание swift, python, React Native</li>
+<li>Продвинутое знание с++,с#,Js,SQL,Unity</li>
+</ul>
+<h3>Курсы</h3>
+<ul>
+  <li>IT Essentials: PC Hardware and Software</li>
+  <li>Introduction to Cybersecurity</li>
+  <li>Cybersecurity Essentials</li>
+  <li>Partner: NDG Linux Unhatched</li>
+</ul>
+<h3>Образование</h3>
+<h4 >Киевский национальный транспортный университет </h4>
+<ul>
+  <li>Обучаюсь на 2 курсе на специальности разработка программного обеспечения</li>
+  <li>Глубоко изучал разработку программ и их тестирование.</li>
+</ul>
+
+
+
+
+  <h2 id="project">Проекты</h2>
+  <div class="card">
+    <div class="circle">
+      <div class="content">
+        <h2 class="ml">shaders</h2>
+        <p>шейдеры огня, воды и всеми любимой игры жизнь</p>
+        <a href="https://github.com/Vasyaph/ShaderWLF">Github</a>
+      </div>
+    </div>
+<img src="image/Screenshot 2022-01-13 at 16.35.25.png">
+  </div>
+  <h3>Шейдеры</h3>
+
+  <p>Данный проект полностью реализован на юнити и использует только базовые возможности движка.<br>В данном проекте есть 3 шейдера которые могут украсить пару локаций или ключевых объектов. Они подходят только для 2D пространства и не могут корректно использоваться в 3D условиях.</p><br>
+  <ul>
+    <li>Шейдер огня- шейдер с красивой графикой и возможностью менять уровень пикселизации</li>
+    <li>Шейдер воды- есть возможность усиление ряби и изменения цвета</li>
+    <li>Игра жизнь- стандартная игра жизнь, которая сначала принимает изображение и работает с закрашеними пикселями объекта</li>
+  </ul>
+  <br>
+
+  <div class="card">
+    <div class="circle">
+      <div class="content">
+        <h2 class="ml">calculator</h2>
+        <p>Простой графический калькулятор на python</p>
+        <a href="https://github.com/Vasyaph/calculatorP">Github</a>
+      </div>
+    </div>
+<img src="image/eq1.png">
+  </div>
+<h3>Калькулятор</h3>
+<p>Практически обычный калькулятор с красивым визуальным интерфейсом который создан на python с помощью визуальной библиотеки pyQt <br> в этом калькуляторе есть некоторые особенности, такие как к примеру стирание производится по двойному нажатию на '='
+</p>
+</div>
+<script>
+
+let stars=document.getElementById('stars');
+let text=document.getElementById('text');
+
+window.addEventListener('scroll',function(){
+  let value=window.scrollY;
+  stars.style.left = value * 0.25 + 'px';
+  text.style.right = value *4 + 'px';
+})
+
+
+</script>
+</div>
+  </body>
+
+</html>

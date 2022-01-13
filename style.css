@@ -1,0 +1,246 @@
+@import url();
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  overflow-x: hidden;
+}
+body{
+min-height: 100vh;
+position: relative;
+
+  background: linear-gradient(rgb(87, 15, 204),rgb(160, 113, 237));
+  /*touch-action: none;
+-ms-touch-action: none;*/
+
+}
+header{
+
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 30px 100px;
+  position: absolute;
+  user-select: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo
+{
+  color: rgb(255, 255, 255);
+  font-weight: 1000;
+  text-decoration: none;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+header ul{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul li{
+  margin-left: 20px;
+  list-style: none;
+
+}
+header ul li a{
+  text-decoration: none;
+  padding: 6px 15px;
+  color: rgb(255, 255, 255);
+}
+header ul li a:hover{
+  background-color: rgb(255, 255, 255);
+  color: rgb(87, 15, 204);
+  border-radius: 30px;
+
+}
+header ul li a.git{
+  background-color: rgb(255, 255, 255);
+  color: rgb(87, 15, 204);
+  border-radius: 30px;
+}
+
+section{
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+section img{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+
+}
+
+section img#house2{
+  transform: scale(-1,1);
+}
+section img#house1{
+  transform: scale(-1,1);
+}
+section img#moon{
+
+}
+#text{
+  position: absolute;
+  right: 0px;
+  color: rgb(12,18,77);
+  white-space: nowrap;
+  font-size: 7.5vw;
+
+
+}
+.info{
+  color: rgb(255, 255, 255);
+  position: relative;
+  padding: 10%;
+  padding-top: 0%;
+  background-color: rgb(12,18,77);
+}
+.info h2{
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.info p{
+  font-size: 1.3em;
+
+}
+.info h3{
+  font-size: 2em;
+
+}
+.info ul{
+  font-size: 1.3em;
+  margin-bottom: 50px;
+
+}
+.info h4{
+  font-size: 1.5em;
+
+}
+hr{
+
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+/*_______________________________________CARD_____________________________CARD________________________________CARD__________________________*/
+.card{
+  float: left;
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background: rgb(12,18,77);
+  border-radius: 20px;
+  display: flex;
+  border-radius: 20px;
+  align-items: center;
+  transition: 0.5s;
+  margin-right: 50px;
+}
+
+.card .circle{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+
+}
+.card .circle::before{
+  content: '';
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  clip-path:circle(50px at center);
+  transition: 0.5s;
+}
+.card:hover .circle:before{
+  background: #000000;
+  clip-path:circle(400px at center);
+}
+.card img{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 100px;
+  pointer-events: none;
+  transition: 0.5s;
+  border-radius: 100px;
+
+}
+
+.card:hover img{
+  left: 90%;
+
+}
+
+.card h3{
+  color: #c7233c;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  transition: 0.5s;
+  opacity: 1;
+  font-size: 1.2em;
+  visibility: visible;
+}
+.card:hover h3{
+  opacity: 0;
+  visibility: hidden;
+  left: 72%;
+  font-size: 2em;
+}
+.card .content{
+  position: relative;
+  left: 40%;
+  width: 75%;
+  padding: 20px 20px 20px 40px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+
+  height: 100%;
+  color: rgb(255, 255, 255);
+
+}
+.card:hover .content{
+left: 0;
+opacity: 1;
+visibility: visible;
+}
+.card .content h2{
+  font-size: 2em;
+}
+.card .content p{
+font-size: 1.2em;
+}
+
+.card .content a{
+  position: absolute;
+  bottom: 20px;
+  font-size: 1.2em;
+  color:rgb(255, 255, 255);
+}
